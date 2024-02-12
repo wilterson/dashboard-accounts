@@ -1,14 +1,13 @@
 import './globals.css';
 
-import { Analytics } from '@vercel/analytics/react';
 import Nav from './nav';
 import Toast from './toast';
 import { Suspense } from 'react';
 
 export const metadata = {
-  title: 'Next.js App Router + NextAuth + Tailwind CSS',
+  title: 'Accounts Dashboard',
   description:
-    'A user admin dashboard configured with Next.js, Postgres, NextAuth, Tailwind CSS, TypeScript, ESLint, and Prettier.'
+    "A user's account admin dashboard configured with Next.js, Tailwind CSS, TypeScript, ESLint, and Prettier."
 };
 
 export default function RootLayout({
@@ -23,7 +22,6 @@ export default function RootLayout({
           <Nav />
         </Suspense>
         {children}
-        <Analytics />
         <Toast />
       </body>
     </html>
